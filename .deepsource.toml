@@ -2,11 +2,10 @@ version = 1
 
 test_patterns = ["tests/**"]
 
-exclude_patterns = ["bin/**"]
-
-[[analyzers]]
-name = "secrets"
-enabled = true
+exclude_patterns = [
+  "vendor/**",
+  "bin/**"
+]
 
 [[analyzers]]
 name = "php"
